@@ -17,7 +17,14 @@ var divideByTwo = function(statement) {
 }
 
 var splitString = function(statement) {
-  alert(divideByTwo(statement).split("").reverse().join(""));
+  return divideByTwo(statement).split("").reverse().join("");
 }
 
-splitString(userSentence);
+
+$("#print").click(function() {
+  alert(userSentence);
+});
+
+$("#encode").click(function() {
+  alert(splitString(userSentence));
+});
